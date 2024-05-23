@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+
+Route::controller(Controller::class)->group(function () {
+    Route::get('/login', 'login');
+    Route::get('/register', 'register');
+    Route::get('/payment', 'payment');
+    Route::get('/dashboard', 'dashboard');
+    Route::get('/info', 'info');
 });
