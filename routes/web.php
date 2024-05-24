@@ -29,4 +29,6 @@ Route::controller(Controller::class)->group(function () {
     Route::get('/my-page', 'myPage');
     Route::get('/logs', 'logs');
     Route::get('/map', 'map');
+    Route::get('/language', 'language');
+    Route::get('/pricing', 'pricing');
 });

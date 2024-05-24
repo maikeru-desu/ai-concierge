@@ -49,4 +49,14 @@ class Controller extends BaseController
     {
         return view('user.pages.map');
     }
+
+    public function language()
+    {
+        return view('user.language');
+    }
+
+    public function pricing()
+    {
+        return view('user.pricing');
+    }
 }
