@@ -19,7 +19,7 @@
 
             <div class="col-span-2 sm:col-span-1">
               <label for="card-number-input" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Card number* </label>
-              <input type="text" id="card-number-input" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pe-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500  dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="^4[0-9]{12}(?:[0-9]{3})?$" required />
+              <input type="text" id="card-number-input" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pe-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500  dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="^4[0-9]{12}(?:[0-9]{3})?¥" required />
             </div>
 
             <div>
@@ -62,28 +62,23 @@
             <div class="space-y-2">
               <dl class="flex items-center justify-between gap-4">
                 <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Original price</dt>
-                <dd class="text-base font-medium text-gray-900 dark:text-white">$6,592.00</dd>
+                <dd class="text-base font-medium text-gray-900 dark:text-white">¥6,592.00</dd>
               </dl>
 
               <dl class="flex items-center justify-between gap-4">
                 <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Savings</dt>
-                <dd class="text-base font-medium text-green-500">-$299.00</dd>
-              </dl>
-
-              <dl class="flex items-center justify-between gap-4">
-                <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Store Pickup</dt>
-                <dd class="text-base font-medium text-gray-900 dark:text-white">$99</dd>
+                <dd class="text-base font-medium text-green-500">-¥299.00</dd>
               </dl>
 
               <dl class="flex items-center justify-between gap-4">
                 <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Tax</dt>
-                <dd class="text-base font-medium text-gray-900 dark:text-white">$799</dd>
+                <dd class="text-base font-medium text-gray-900 dark:text-white">¥799</dd>
               </dl>
             </div>
 
             <dl class="flex items-center justify-between gap-4 border-t border-gray-200 pt-2 dark:border-gray-700">
               <dt class="text-base font-bold text-gray-900 dark:text-white">Total</dt>
-              <dd class="text-base font-bold text-gray-900 dark:text-white">$7,191.00</dd>
+              <dd class="text-base font-bold text-gray-900 dark:text-white">¥7,191.00</dd>
             </dl>
           </div>
 
@@ -99,8 +94,8 @@
       </div>
 
       <p class="mt-6 text-center text-gray-500 dark:text-gray-400 sm:mt-8 lg:text-left">
-        Payment processed by <a href="#" title="" class="font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">Paddle</a> for <a href="#" title="" class="font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">Flowbite LLC</a>
-        - United States Of America
+        Payment processed by <a href="#" title="" class="font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">Stripe</a> for <a href="#" title="" class="font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">AI Concierge</a>
+        - Japan
       </p>
     </div>
   </div>
