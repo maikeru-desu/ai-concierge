@@ -26,4 +26,7 @@ Route::controller(Controller::class)->group(function () {
     Route::get('/payment', 'payment');
     Route::get('/dashboard', 'dashboard');
     Route::get('/info', 'info');
+    Route::get('/my-page', 'myPage');
+    Route::get('/logs', 'logs');
+    Route::get('/map', 'map');
 });

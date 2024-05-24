@@ -34,4 +34,19 @@ class Controller extends BaseController
     {
         return view('user.pages.info');
     }
+
+    public function myPage()
+    {
+        return view('user.pages.my-page');
+    }
+
+    public function logs()
+    {
+        return view('user.pages.logs');
+    }
+
+    public function map()
+    {
+        return view('user.pages.map');
+    }
 }

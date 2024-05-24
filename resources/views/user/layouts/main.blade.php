@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AI Concierge</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+  
   @vite('resources/css/app.css')
 </head>
 <body class="h-full dark:bg-gray-900">
