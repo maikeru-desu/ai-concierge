@@ -13,6 +13,10 @@ class UserCardController extends Controller
         $userSession = session()->get('user_session');
         $plan = Plan::where('id', $userSession['plan_id'])->first();
 
+        if (!$plan) {
+            $plan = Plan::all()->first();
+        }
+
         return view('user.payment', compact('plan'));
     }
 }
