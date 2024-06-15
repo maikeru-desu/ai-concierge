@@ -38,16 +38,16 @@ Route::get('/set/{locale?}', function ($locale) {
     session()->put('locale', $locale);
 });
 
-Route::controller(Controller::class)->group(function () {
-    // Route::get('/login', 'login');
-    // Route::get('/register', 'register');
-    // Route::get('/dashboard', 'dashboard');
-    // Route::get('/info', 'info');
-    // Route::get('/my-page', 'myPage');
-    // Route::get('/logs', 'logs');
-    // Route::get('/map', 'map');
+Route::controller(Controller::class)->prefix('pages')->group(function () {
+    Route::get('/login', 'login');
+    Route::get('/register', 'register');
+    Route::get('/dashboard', 'dashboard');
+    Route::get('/info', 'info');
+    Route::get('/my-page', 'myPage');
+    Route::get('/logs', 'logs');
+    Route::get('/map', 'map');
     Route::get('/language', 'language');
-    // Route::get('/pricing', 'pricing')->name('pricing');
+    Route::get('/pricing', 'pricing')->name('pricing');
 });
 
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Plan;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\RedirectResponse;
@@ -54,7 +55,9 @@ class Controller extends BaseController
 
     public function pricing()
     {
-        return view('user.pricing');
+        $plans = Plan::all();
+
+        return view('user.pricing', compact('plans'));
     }
 
     public function language()
