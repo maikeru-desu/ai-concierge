@@ -11,7 +11,7 @@ class UserCardController extends Controller
     public function payment(): View
     {
         $userSession = session()->get('user_session');
-        $plan = Plan::where('id', $userSession['plan_id'])->first();
+        $plan = Plan::where('id', $userSession['plan_id'] ?? 1)->first();
 
         if (!$plan) {
             $plan = Plan::all()->first();
