@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\App;
 
 class Controller extends BaseController
 {
@@ -50,13 +52,21 @@ class Controller extends BaseController
         return view('user.pages.map');
     }
 
+    public function pricing()
+    {
+        return view('user.pricing');
+    }
+
     public function language()
     {
         return view('user.language');
     }
 
-    public function pricing()
+    public function changeLanguage(string $locale): RedirectResponse
     {
-        return view('user.pricing');
+        app()->setLocale($locale);
+        session()->put('locale', $locale);
+
+        return redirect()->route('');
     }
 }
